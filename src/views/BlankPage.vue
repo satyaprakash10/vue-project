@@ -1,8 +1,8 @@
 <template>
   <!-- <div class="container"> -->
     <div class="row">
-      <div class="container">
-        <div class="card-header">  
+      <div class="col-lg-12 bg-white ">
+        <div class=" ">  
          <h1>Blank Page</h1>
         </div>
         <div class="card-body">

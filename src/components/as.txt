@@ -1,0 +1,87 @@
+<template>
+	<div>
+		<navbar/>
+		<sidebar/>
+			<DoughnutChart
+									:labels="['January', 'February', 'March']"
+									:values="[50, 30, 20]"
+								/>
+			<!-- <div class="main-content">
+				<div class="col-md-9 ">
+					<Card>
+						<div class="card-header">
+							<p class="card-chart-p">Line Chart</p>
+						</div>
+						<div class="card-body">
+							<LineChart
+								:labels="[
+									'Sunday',
+									'Monday',
+									'Tuesday',
+									'Wednesday',
+									'Thursday',
+									'Friday',
+									'Satuerday'
+								]"
+								:values="[50, 100, 150, 200]"
+							>
+							</LineChart>
+						</div>
+					</Card>	
+				</div>
+				<div class="row card-chart ">
+        	<div class="col-md-3 chart-col1">
+						<Card>
+							<div class="card-header">
+								<p class="card-chart-p">Area Chart</p>
+							</div>
+							<div class="card-body">
+								<DoughnutChart
+									:labels="['January', 'February', 'March']"
+									:values="[50, 30, 20]"
+								/>
+							</div>
+							<div class="card-footer">
+								<ul>
+									<li>Apple</li>
+									<li>Samsung</li>
+								</ul>
+								<ul>
+									<li>GooglePixel</li>
+								</ul>
+							</div>
+						</Card>
+        </div>
+				<router-view></router-view>
+			</div>
+		</div> -->
+	</div>	
+</template>
+
+<script>
+import Sidebar from "../components/Sidebar.vue";
+import Navbar from "../components/Navbar.vue";
+// import Content from "../components/Content.vue";
+ 
+export default {
+  components: {
+    Sidebar,
+    Navbar
+    // Content
+  }
+};
+</script>
+
+<style>
+	.main-content {
+		padding-left: 225px;
+		padding-top: 55px;
+		width: 100%
+	}
+
+/* @media screen and (max-width: 768px) {
+  .main-content {
+		/* padding-left: 90px;
+		padding-top: 36px; */
+	/* }  */
+</style>

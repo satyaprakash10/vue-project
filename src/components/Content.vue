@@ -1,5 +1,5 @@
 <template>
-  <div> 
+   <div>
     <div class="container">
       <router-view></router-view>
     </div>
@@ -70,11 +70,12 @@
     .lists-1 {
       color: blue;
       display: flex;
+      margin-right: 16px;
       justify-content: space-between;
       /* margin-left: 40px; */
     }
     .lists-2 {
-      margin-left: 50px;
+      margin-left: 28px;
       color: aqua;
     }
     .card-header {

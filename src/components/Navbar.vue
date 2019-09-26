@@ -1,7 +1,7 @@
 <template>
     <div>
          <nav class="navbar navbar-expand-md   bg-primary">
-           <i class="fa fa-viacoin logo-style" aria-hidden="true"></i>
+           <i class="fa fa-viacoin logo-style-1" aria-hidden="true"></i>
             <a href="#" class=" logo-style">MATERIALPRO.</a>
             <div class="collapse-menu">
               <div class="collapse-menu-icon-container">
@@ -12,8 +12,11 @@
               <div class="input-group-append ">
                   <button type="button" class="btn btn-style"><i class="fa fa-search "></i></button>
               </div>   
-                <img  class="sidebar-image" :src="images.sample">
+                <!-- <div class="s ample_image">
+                  <img :src="image" hight="50px" width="30px" class="sample"/>
+                </div> -->
              </div>
+             <img :src="image" class="sidebar-image"/>
             <div class="  dropdown">
               <a href="#" class="  dropdown-toggle" data-toggle="dropdown">Messages</a>
               <div class="dropdown-menu">
@@ -27,6 +30,8 @@
 </template>
 
 <script>
+import image from "../assets/sample.jpg"
+
 export default {
   components:{
 
@@ -34,9 +39,10 @@ export default {
   data()
   {
     return{
-      images: {
-        sample: 'https://cdn5.vectorstock.com/i/1000x1000/23/49/new-man-avatar-icon-flat-vector-19152349.jpg'
-      }
+      // images: {
+      //   sample: 'assets/sample.jpg'
+      // }
+      image: image
     }
   },
   methods:
@@ -61,10 +67,9 @@ body {
   font-family: "Lato", sans-serif;
   background: #efefef;
 }
- 
 .icons-bar {
   font-size: 40px;
-  margin-right: 34px;
+  /* margin-right: 34px; */
   color: white;
 }
 .navbar { 
@@ -78,6 +83,10 @@ body {
   color: white;
   text-decoration: none;
   margin-left: 10px;
+}
+
+.logo-style-1 {
+  font-size: 25px;
 }
 
 .btn-style {
@@ -95,19 +104,27 @@ body {
  
 .sidebar-image{ 
   border-radius:50%;
-  /* display: flex; */
-  justify-content: flex-end;
   width: 30px;
   height: 30px;  
-  /* border: 5px   #4337a4; */
   margin-top: 5px;
   overflow: hidden;
+  margin-left: auto;
+  margin-right: 10px;
+  margin-top: -1px;
 }
 
 @media screen and (max-width: 768px) {
    .dropdown-toggle {
      display: none;
    }
+  .logo-style {
+    /* padding-right: 143px; */
+  }
+  .sidebar-image {
+    /* display: block;
+    margin-top: -10px;
+    margin-left: auto; */
+  }
 }
 
 </style>

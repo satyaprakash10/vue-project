@@ -1,0 +1,60 @@
+<template>
+    <div>
+      <!-- <router-view></router-view> -->
+        <!-- <div class="row card-chart ">
+        <div class="col-xl-9 col-md-5 chart-col1">
+          <Card>
+            <div slot="header">
+              <p class="card-chart-p">Area Chart</p>
+            </div> -->
+            <!-- <div slot="body"> -->
+               <DoughnutChart
+                :labels="['January', 'February', 'March']"
+                :values="[50, 30, 20]"
+              />
+            <!-- </div> -->
+          <!-- </Card> -->
+        <!-- </div>
+        <div class="col-md-9">
+          <Card>
+            <div class="card-header">
+              <p class="card-chart-p">Line Chart</p>
+            </div>
+            <div class="card-body"> -->
+              <LineChart
+                :labels="[
+                  'Sunday',
+                  'Monday',
+                  'Tuesday',
+                  'Wednesday',
+                  'Thursday',
+                  'Friday',
+                  'Satuerday'
+                ]"
+                :values="[50, 100, 150, 200]"
+              >
+              </LineChart>
+            <!-- </div>
+          </Card>
+        </div>
+      </div> -->
+    </div>
+</template>
+ 
+ <script>
+  import DoughnutChart from "../components/DoughnutChart.vue";
+  import LineChart from "../components/LineChart.vue";
+  // import Card from "../components/Card.vue";
+  export default {
+      components: {
+        DoughnutChart,
+        LineChart
+        // Card
+    }
+  }
+ </script>
+ 
+
+ <style >
+     
+ </style>

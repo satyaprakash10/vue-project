@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <div class="card-header">
+  <div class=" ">
+    <div class=" mt-0 bg-white">
       <h1>Basic Table</h1>
     </div>
   </div>

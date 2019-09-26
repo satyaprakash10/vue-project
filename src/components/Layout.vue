@@ -23,23 +23,22 @@ export default {
 </script>
 
 <style>
-  .body {
-		/* background: rgb(141, 171, 238); */
-	}
-	.main-content {
-		padding-left: 225px;
-		padding-top: 55px;
-		width: 100%;
-		position: absolute;
-		background:  rgb(230, 234, 243);
-	}
+  
+.main-content {
+	padding-left: 225px;
+  padding-right: 90px;
+	padding-top: 55px;
+	width: 100%;
+	position: absolute;
+	/* background:  rgb(230, 234, 243); */
+}
 
 @media screen and (max-width: 768px) {
   .main-content {
-	  padding-left: 80px;
-		padding-top: 50px;  
-		margin-top: -19px;
+	padding-left: 80px;
+	padding-top: 50px;  
+	margin-top: -19px;
     /* background: white; */
-	 } 
+	} 
 } 
 </style>

@@ -1,8 +1,8 @@
 <template>
     <div>
-      <div class="col-md-12 card-body bg-white"> 
+      <div class="card bg-white"> 
         <div class=" bg-white">
-          <div class="inner-color">
+          <div>
             <h1>Dashbord<small class="text-muted"> </small></h1>
               <a href=""> Home  >  </a><span class="inner-c"> Dashbord</span>
           </div>
@@ -22,6 +22,10 @@
 </script>
 
 <style>
+body {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
 .box {
   /* margin-top:6%; */
   /* width: 100%; */
